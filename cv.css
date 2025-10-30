@@ -26,6 +26,7 @@ body {
 }
 .profil-photo {
   border-radius: 50%;
+  object-position: 0;
   object-fit: cover;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   display: block;
@@ -232,4 +233,5 @@ body {
     font-size: 20px;
   }
 }
+
 
