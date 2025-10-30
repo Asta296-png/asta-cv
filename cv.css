@@ -92,6 +92,57 @@ body {
 .language {
   margin-bottom: 15px;
 }
+.language {
+  margin-bottom: 15px;
+}
+
+.language span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white; /* Mets #333 si cette section est dans la colonne droite */
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px; /* Petit rectangle */
+  background-color: .language {
+  margin-bottom: 15px;
+}
+
+.language span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white; /* Mets #333 si cette section est dans la colonne droite */
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px; /* Petit rectangle */
+  background-color: #0077cc; /* Fond blanc */
+  border: 1px solid white; /* Contour bleu */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: white; /* Bleu pour le niveau */
+  transition: width 0.5s ease-in-out;
+}
+; /* Fond blanc */
+  border: 1px solid white; /* Contour bleu */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #0077cc; /* Bleu pour le niveau */
+  transition: width 0.5s ease-in-out;
+}
+
 
 /* ======= Colonne droite ======= */
 
@@ -181,3 +232,4 @@ body {
     font-size: 20px;
   }
 }
+
