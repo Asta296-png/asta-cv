@@ -5,9 +5,31 @@
   <title>CV - Asta Mbathie</title>
   <link rel="stylesheet" href="cv.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <script src="JS/cv.js"></script>
+  <script src="./cv.js"></script>
 </head>
 <body>
+  function typeText(id, text, speed) {
+  const el = document.getElementById(id);
+  let i = 0;
+  el.textContent = "";
+
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+
+  type();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  typeText("typed-name", "Asta Mbathie", 150);
+  setTimeout(() => {
+    typeText("typed-title", "Étudiante en informatique", 150);
+  }, 2000);
+});
     <div class="cv-container">
     
     <!-- Colonne gauche -->
@@ -137,30 +159,9 @@
     </div>
   </div>
   
-function typeText(id, text, speed) {
-  const el = document.getElementById(id);
-  let i = 0;
-  el.textContent = "";
-
-  function type() {
-    if (i < text.length) {
-      el.textContent += text.charAt(i);
-      i++;
-      setTimeout(type, speed);
-    }
-  }
-
-  type();
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-  typeText("typed-name", "Asta Mbathie", 150);
-  setTimeout(() => {
-    typeText("typed-title", "Étudiante en informatique", 150);
-  }, 2000);
-});
 </body>
 </html>
+
 
 
 
