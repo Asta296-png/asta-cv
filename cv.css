@@ -164,6 +164,10 @@ body {
   animation: blink-caret 0.75s step-end infinite;
 }
 
+.bleu {
+  color: #0077cc;
+}
+
 @keyframes blink-caret {
   from, to { border-color: transparent; }
   50% { border-color: #0077cc; }
@@ -233,5 +237,6 @@ body {
     font-size: 20px;
   }
 }
+
 
 
