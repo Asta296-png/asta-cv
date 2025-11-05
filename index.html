@@ -63,10 +63,10 @@
         </ul>
     </div>
     <!-- Colonne droite -->
-    <div class="right-column">
+   <div class="right-column">
       <div class="typing-container"></div>
-        <h1>Asta Mbathie</h1>
-        <p>Étudiante en informatique</p>
+        <h1 id="typed-name" class="bleu">Asta Mbathie</h1>
+        <p id="typed-title" class="bleu"></p>
 
       <section>
         <h2>Profil</h2>
@@ -136,8 +136,32 @@
       </section>
     </div>
   </div>
+  
+function typeText(id, text, speed) {
+  const el = document.getElementById(id);
+  let i = 0;
+  el.textContent = "";
+
+  function type() {
+    if (i < text.length) {
+      el.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+
+  type();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  typeText("typed-name", "Asta Mbathie", 150);
+  setTimeout(() => {
+    typeText("typed-title", "Étudiante en informatique", 150);
+  }, 2000);
+});
 </body>
 </html>
+
 
 
 
